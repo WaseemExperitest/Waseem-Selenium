@@ -4,7 +4,8 @@
     <listeners>
         <listener class-name="com.waseem.framework.EnvReaderListener"/>
     </listeners>
-    <parameter name="job" value="Sample job"/>
+    <parameter name="build" value="Not Set"/>
+    <parameter name="accessKey" value="Not Set"></parameter>
     <test name="My Test">
         <classes>
 			<class name="com.waseem.tests.SampleTest" />
