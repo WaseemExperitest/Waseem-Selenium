@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My Suite" parallel="methods" verbose="10">
-	<parameter name="name" value="Sample name" />
-	<test name="Test">
-		<classes>
-			<class name="com.waseem.tasks.SampleTest" />
+<suite name="My Suite" parallel="methods">
+    <listeners>
+        <listener class-name="com.waseem.framework.EnvReaderListener"/>
+    </listeners>
+    <parameter name="job" value="Sample job"/>
+    <test name="My Test">
+        <classes>
+			<class name="com.waseem.tests.SampleTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

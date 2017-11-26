@@ -22,6 +22,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="reports"/>
+	<classpathentry kind="src" path="bin"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -32,5 +34,62 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/aspectjweaver-1.8.9.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/boon-0.33.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-digester-1.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/commons-validator-1.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/cssparser-0.9.18.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/gson-2.7.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/htmlunit-2.21.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/htmlunit-core-js-2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/htmlunit-driver-2.21.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/java-client-4.1.2.jar" sourcepath="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/jetty-io-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/jetty-util-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/manager-client-api-11.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/neko-htmlunit-2.21.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-api-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-chrome-driver-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-edge-driver-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-firefox-driver-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-ie-driver-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-java-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-leg-rc-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-remote-driver-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-safari-driver-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/selenium-support-2.53.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/spring-aop-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/spring-beans-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/spring-context-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/spring-core-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/spring-expression-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/websocket-api-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/websocket-client-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/websocket-common-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/ws-commons-util-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xmlrpc-client-3.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xmlrpc-common-3.1.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
