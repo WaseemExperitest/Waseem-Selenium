@@ -1,41 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My Suite" parallel="tests" verbose="10">
+<suite name="My Suite" parallel="tests" verbose="10" thread-count="5">
 	<listeners>
-		<listener class-name="com.waseem.EnvReaderListener" />
+		<listener class-name="com.waseem.framework.EnvReaderListener" />
 	</listeners>
 	<parameter name="build" value="2" />
 	<parameter name="accessKey" value="Not Set"></parameter>
-	<test name="EriBank_Android 1">
+	<parameter name="launsh.url" value="https://experitest.com/customers" />
+
+	<test name="Web-Android">
+		<parameter name="browser.os" value="android" />
+		<parameter name="deviceQuery" value="@os='android'" />
 		<classes>
-			<class name="com.waseem.tests.android.EriBank_Android">
-				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
-				<parameter name="deviceQuery" value="@os='android'"></parameter>
+			<class name="com.waseem.tests.ExperitestCustomers" />
+		</classes>
+	</test>
+
+	<test name="Web-iOS">
+		<parameter name="browser.os" value="ios" />
+		<parameter name="deviceQuery" value="@os='ios' and contains(@model, 'iphone')" />
+		<classes>
+			<class name="com.waseem.tests.ExperitestCustomers" />
+		</classes>
+	</test>
+
+	<test name="EriBank-Android">
+		<parameter name="deviceQuery" value="@udid='5127b6db'"></parameter>
+		<!-- <parameter name="deviceQuery" value="@os='android'"></parameter> -->
+		<classes>
+			<class name="com.waseem.tests.EriBank_Android">
 			</class>
 		</classes>
 	</test> <!-- Test -->
-	<test name="EriBank_Android 2">
+
+	<test name="EriBank-ios">
+		<parameter name="deviceQuery"
+			value="@udid='5d844d70f42c4cf78cff3b394a53e0763c2766dd'"></parameter>
+		<!-- <parameter name="deviceQuery" value="@os='ios'"></parameter> -->
 		<classes>
-			<class name="com.waseem.tests.android.EriBank_Android">
-				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
-				<parameter name="deviceQuery" value="@os='android'"></parameter>
+			<class name="com.waseem.tests.EriBank_iOS">
 			</class>
 		</classes>
 	</test> <!-- Test -->
-	<test name="EriBank_ios 1">
+	
+	<test name="EriBank-Android">
+		<parameter name="deviceQuery" value="@udid='LGH85056416a94'"></parameter>
+		<!-- <parameter name="deviceQuery" value="@os='android'"></parameter> -->
 		<classes>
-			<class name="com.waseem.tests.ios.EriBank_iOS">
-				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
-				<parameter name="deviceQuery" value="@os='ios'"></parameter>
+			<class name="com.waseem.tests.LoginFail_Android">
 			</class>
 		</classes>
 	</test> <!-- Test -->
-	<test name="EriBank_ios 2">
-		<classes>
-			<class name="com.waseem.tests.ios.EriBank_iOS">
-				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
-				<parameter name="deviceQuery" value="@os='ios'"></parameter>
-			</class>
-		</classes>
-	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

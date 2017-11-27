@@ -91,5 +91,6 @@
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xmlrpc-client-3.1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Experitest/SeeTest/clients/appium/java/xmlrpc-common-3.1.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
