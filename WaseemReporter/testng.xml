@@ -24,7 +24,7 @@
 	</test> <!-- Test -->
 	<test name="EriBank_ios 1">
 		<classes>
-			<class name="com.waseem.tests.ios.EriBank_ios">
+			<class name="com.waseem.tests.ios.EriBank_iOS">
 				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
 				<parameter name="deviceQuery" value="@os='ios'"></parameter>
 			</class>
