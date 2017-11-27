@@ -25,8 +25,8 @@
 	</test>
 
 	<test name="EriBank-Android">
-		<parameter name="deviceQuery" value="@udid='5127b6db'"></parameter>
-		<!-- <parameter name="deviceQuery" value="@os='android'"></parameter> -->
+		<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
+		<parameter name="deviceQuery" value="@os='android'"></parameter>
 		<classes>
 			<class name="com.waseem.tests.EriBank_Android">
 			</class>
@@ -34,22 +34,21 @@
 	</test> <!-- Test -->
 
 	<test name="EriBank-ios">
-		<parameter name="deviceQuery"
-			value="@udid='5d844d70f42c4cf78cff3b394a53e0763c2766dd'"></parameter>
-		<!-- <parameter name="deviceQuery" value="@os='ios'"></parameter> -->
+		<!-- <parameter name="deviceQuery" value="@udid='5d844d70f42c4cf78cff3b394a53e0763c2766dd'"></parameter> -->
+		<parameter name="deviceQuery" value="@os='ios'"></parameter>
 		<classes>
 			<class name="com.waseem.tests.EriBank_iOS">
 			</class>
 		</classes>
 	</test> <!-- Test -->
-	
+
 	<test name="LoginFail-Android">
-		<parameter name="deviceQuery" value="@udid='LGH85056416a94'"></parameter>
-		<!-- <parameter name="deviceQuery" value="@os='android'"></parameter> -->
+		<!-- <parameter name="deviceQuery" value="@udid='LGH85056416a94'"></parameter> -->
+		<parameter name="deviceQuery" value="@os='android'"></parameter>
 		<classes>
 			<class name="com.waseem.tests.LoginFail_Android">
 			</class>
 		</classes>
 	</test> <!-- Test -->
-	
+
 </suite> <!-- Suite -->
