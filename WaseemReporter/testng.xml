@@ -43,7 +43,7 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test name="EriBank-Android">
+	<test name="LoginFail-Android">
 		<parameter name="deviceQuery" value="@udid='LGH85056416a94'"></parameter>
 		<!-- <parameter name="deviceQuery" value="@os='android'"></parameter> -->
 		<classes>
