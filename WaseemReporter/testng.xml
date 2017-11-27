@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My Suite" parallel="methods">
-    <listeners>
-        <listener class-name="com.waseem.framework.EnvReaderListener"/>
-    </listeners>
-    <parameter name="build" value="Not Set"/>
-    <parameter name="accessKey" value="Not Set"></parameter>
-    <test name="My Test">
-        <classes>
-			<class name="com.waseem.tests.SampleTest" />
+<suite name="My Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.waseem.EnvReaderListener" />
+	</listeners>
+	<parameter name="build" value="2" />
+	<parameter name="accessKey" value="Not Set"></parameter>
+	<test name="EriBank_Android 1">
+		<classes>
+			<class name="com.waseem.tests.android.EriBank_Android">
+				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
+				<parameter name="deviceQuery" value="@os='android'"></parameter>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="EriBank_Android 2">
+		<classes>
+			<class name="com.waseem.tests.android.EriBank_Android">
+				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
+				<parameter name="deviceQuery" value="@os='android'"></parameter>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="EriBank_ios 1">
+		<classes>
+			<class name="com.waseem.tests.ios.EriBank_ios">
+				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
+				<parameter name="deviceQuery" value="@os='ios'"></parameter>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="EriBank_ios 2">
+		<classes>
+			<class name="com.waseem.tests.ios.EriBank_ios">
+				<!-- <parameter name="deviceQuery" value="@udid='5127b6db'"></parameter> -->
+				<parameter name="deviceQuery" value="@os='ios'"></parameter>
+			</class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
