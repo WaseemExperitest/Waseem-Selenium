@@ -3,6 +3,7 @@ package com.waseem.tests;
 import com.waseem.framework.BaseTest;
 
 import org.openqa.selenium.By;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -18,8 +19,13 @@ public class EriBank_iOS extends BaseTest {
 	protected IOSDriver<IOSElement> driver = null;
 
 	@BeforeMethod
-	@Parameters({ "build", "deviceQuery" })
-	public void setUp(@Optional("0") String build, @Optional("@os='ios'") String deviceQuery) throws Exception {
+	// @Parameters({ "build", "deviceQuery" })
+	// public void setUp(@Optional("0") String build, @Optional("@os='ios'") String
+	// deviceQuery) throws Exception {
+	public void setUp(ITestContext context) throws Exception {
+
+		String build = getParameter(context, "build", "0");
+		String deviceQuery = getParameter(context, "EriBank_iOS_DeviceQuery", "@os='ios' and contains(@model, 'iphone')");
 
 		// Init application / device capabilities
 		init(build, deviceQuery);

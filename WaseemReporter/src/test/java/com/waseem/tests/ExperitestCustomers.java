@@ -18,7 +18,7 @@ public class ExperitestCustomers extends WebBaseTest {
 		WebElement customer = null;
 		for (int i = 1; i <= customersPrintCount; i++) {
 			customer = driver.findElement(By.xpath("((//*[contains(@class,'img_name')]/../..)/*/*)[" + i + "]"));
-			System.out.println(browserOS + "[" + i + "] class=" + customer.getAttribute("class"));
+			System.out.println(browserOS + "[" + i + "] src=" + customer.getAttribute("class"));
 		}
 //		if (!isMobile) {
 //			ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());

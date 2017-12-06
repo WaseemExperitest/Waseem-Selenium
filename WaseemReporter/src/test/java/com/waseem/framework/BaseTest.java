@@ -8,6 +8,8 @@ import java.net.URL;
 import java.util.Properties;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestContext;
+import org.testng.util.Strings;
 
 public class BaseTest {
 
@@ -20,7 +22,7 @@ public class BaseTest {
 		String query = adhocDevice(deviceQuery);
 		System.out.println("query=" + query);
 		dc.setCapability("deviceQuery", query);
-//		dc.setCapability(MobileCapabilityType.UDID, "5127b6db");
+		// dc.setCapability(MobileCapabilityType.UDID, "5127b6db");
 
 		dc.setCapability("reportDirectory", "reports");
 		dc.setCapability("reportFormat", "xml");
@@ -50,10 +52,28 @@ public class BaseTest {
 		String port = getProperty("port", cloudProperties);
 		if (port == null || port.length() <= 0) {
 			port = "443";
-		}		
+		}
 		url = new URL(getProperty("url", cloudProperties) + ":" + port + "/wd/hub");
 		System.out.println("url=" + url);
-		System.out.println(getClass().getName() + " > "+ dc);
+		System.out.println(getClass().getName() + " > " + dc);
+	}
+
+	protected String getParameter(ITestContext context, String key, String defaultValue) throws FileNotFoundException, IOException {
+		String parameter = context.getCurrentXmlTest().getParameter(key);
+		System.out.println("getParameter(" + context.getName() + "," + key + ")=" + parameter);
+		if (Strings.isNullOrEmpty(parameter)) {
+			parameter = getProperty(key, cloudProperties);
+		}
+		if (Strings.isNullOrEmpty(parameter)) {
+			System.out.println("getParameter(" + context.getName() + "," + key + ") > using default value:" + defaultValue);
+			parameter = defaultValue;
+		}
+		return parameter;
+	}
+
+	protected String getProperty(String property) throws FileNotFoundException, IOException {
+		String value = getProperty(property, cloudProperties);
+		return value;
 	}
 
 	protected String getProperty(String property, Properties props) throws FileNotFoundException, IOException {
