@@ -49,7 +49,6 @@ public class EriBank_Android extends BaseTest {
 		System.out.println(getClass().getName() + " > " + dc);
 		System.out.println("---");
 		System.out.println();
-
 	}
 
 	@Test

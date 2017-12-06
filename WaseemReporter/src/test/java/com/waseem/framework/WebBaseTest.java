@@ -134,7 +134,11 @@ public class WebBaseTest {
 			isMobile = true;
 			seeTestserver = addGridCapabilities(context, dc);
 			dc.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
+			System.out.println();
+			System.out.println("---");
 			System.out.println(getClass().getName() + " ANDROID > " + dc);
+			System.out.println("---");
+			System.out.println();
 			AndroidDriver<WebElement> androidDriver = new AndroidDriver<WebElement>(new URL(seeTestserver), dc);
 			androidDriver.unlockDevice();
 			androidDriver.rotate(ScreenOrientation.PORTRAIT);
@@ -145,7 +149,11 @@ public class WebBaseTest {
 			isMobile = true;
 			seeTestserver = addGridCapabilities(context, dc);
 			dc.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.SAFARI);
+			System.out.println();
+			System.out.println("---");
 			System.out.println(getClass().getName() + " IOS > " + dc);
+			System.out.println("---");
+			System.out.println();
 			IOSDriver<WebElement> iosDriver = new IOSDriver<WebElement>(new URL(seeTestserver), dc);
 			iosDriver.executeScript("client:client.deviceAction(\"Unlock\")");
 			iosDriver.rotate(ScreenOrientation.PORTRAIT);
@@ -163,13 +171,21 @@ public class WebBaseTest {
 			System.setProperty("webdriver.chrome.driver", resource.getPath());
 			System.out.println(browserOS + ", driver=" + System.getProperty("webdriver.chrome.driver"));
 			dc.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
+			System.out.println();
+			System.out.println("---");
 			System.out.println(getClass().getName() + " CHROME > " + dc);
+			System.out.println("---");
+			System.out.println();
 			driver = new ChromeDriver(dc);
 			break;
 		case FIREFOX:
 			isMobile = false;
 			dc.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
+			System.out.println();
+			System.out.println("---");
 			System.out.println(getClass().getName() + " FIREFOX > " + dc);
+			System.out.println("---");
+			System.out.println();
 			driver = new FirefoxDriver(dc);
 			break;
 		default:
@@ -187,8 +203,9 @@ public class WebBaseTest {
 
 		String launshUrl = getParameter(context, "launsh.url");
 		if (Strings.isNullOrEmpty(launshUrl)) {
-			launshUrl = "https://experitest.com/customers";			
+			launshUrl = "https://experitest.com/customers";
 		}
+
 		driver.get(launshUrl);
 	}
 

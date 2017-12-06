@@ -40,6 +40,13 @@ public class EriBank_iOS extends BaseTest {
 		if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
 			driver.installApp("cloud:com.experitest.ExperiBank");
 		}
+
+		System.out.println();
+		System.out.println("---");
+		System.out.println(getClass().getName() + " > " + dc);
+		System.out.println("---");
+		System.out.println();
+
 	}
 
 	@Test

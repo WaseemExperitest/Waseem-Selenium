@@ -47,7 +47,13 @@ public class LoginFail_Android extends BaseTest {
 		// if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
 		// driver.installApp("cloud:com.experitest.ExperiBank/.LoginActivity");
 		// }
-	}
+
+		System.out.println();
+		System.out.println("---");
+		System.out.println(getClass().getName() + " > " + dc);
+		System.out.println("---");
+		System.out.println();
+}
 
 	@Test
 	public void test() {
