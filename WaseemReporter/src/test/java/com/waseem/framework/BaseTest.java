@@ -17,8 +17,20 @@ public class BaseTest {
 	protected DesiredCapabilities dc = new DesiredCapabilities();
 	protected Properties cloudProperties = new Properties();
 
+	public BaseTest()
+	{
+		try {
+			initCloudProperties();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public void init(String build, String deviceQuery) throws Exception {
-		initCloudProperties();
+		// initCloudProperties();
 		String query = adhocDevice(deviceQuery);
 		System.out.println("query=" + query);
 		dc.setCapability("deviceQuery", query);
