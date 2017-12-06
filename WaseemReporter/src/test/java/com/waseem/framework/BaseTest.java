@@ -67,7 +67,6 @@ public class BaseTest {
 		}
 		url = new URL(getProperty("url", cloudProperties) + ":" + port + "/wd/hub");
 		System.out.println("url=" + url);
-		System.out.println(getClass().getName() + " > " + dc);
 	}
 
 	protected String getParameter(ITestContext context, String key, String defaultValue) throws FileNotFoundException, IOException {

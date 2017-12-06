@@ -4,6 +4,7 @@ import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.util.Strings;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
@@ -185,6 +186,9 @@ public class WebBaseTest {
 		}
 
 		String launshUrl = getParameter(context, "launsh.url");
+		if (Strings.isNullOrEmpty(launshUrl)) {
+			launshUrl = "https://experitest.com/customers";			
+		}
 		driver.get(launshUrl);
 	}
 
