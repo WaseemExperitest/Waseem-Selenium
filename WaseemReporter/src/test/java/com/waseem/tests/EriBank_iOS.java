@@ -25,7 +25,8 @@ public class EriBank_iOS extends BaseTest {
 	public void setUp(ITestContext context) throws Exception {
 
 		String build = getParameter(context, "build", "0");
-		String deviceQuery = getParameter(context, "EriBank_iOS_DeviceQuery", "@os='ios' and contains(@model, 'iphone')");
+		String deviceQuery = getParameter(context, "deviceQuery", "@os='ios' and contains(@model, 'iphone')");
+//		String deviceQuery = getParameter(context, "EriBank_iOS_DeviceQuery", "@os='ios' and contains(@model, 'iphone')");
 
 		// Init application / device capabilities
 		init(build, deviceQuery);

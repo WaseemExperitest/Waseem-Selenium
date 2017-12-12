@@ -27,7 +27,8 @@ public class LoginFail_Android extends BaseTest {
 	public void setUp(ITestContext context) throws Exception {
 
 		String build = getParameter(context, "build", "0");
-		String deviceQuery = getParameter(context, "LoginFail_Android_DeviceQuery", "@os='android'");
+		String deviceQuery = getParameter(context, "deviceQuery", "@os='android'");
+//		String deviceQuery = getParameter(context, "LoginFail_Android_DeviceQuery", "@os='android'");
 
 		// Init application / device capabilities
 		init(build, deviceQuery);
