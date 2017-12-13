@@ -1,23 +1,19 @@
 package com.waseem.tests;
 
 import com.waseem.framework.BaseTest;
+import com.waseem.framework.NewAndroidDriver;
 
 import org.openqa.selenium.By;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
-import io.appium.java_client.remote.MobileCapabilityType;
 
 public class LoginFail_Android extends BaseTest {
 
-	protected AndroidDriver<AndroidElement> driver = null;
+	protected NewAndroidDriver<AndroidElement> driver = null;
 
 	@BeforeMethod
 	// @Parameters({ "build", "deviceQuery" })
@@ -44,7 +40,7 @@ public class LoginFail_Android extends BaseTest {
 		// dc.setCapability(MobileCapabilityType.NO_RESET, true);
 		// dc.setCapability("instrumentApp", true);
 		//
-		driver = new AndroidDriver<AndroidElement>(url, dc);
+		driver = new NewAndroidDriver<AndroidElement>(url, dc);
 		// if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
 		// driver.installApp("cloud:com.experitest.ExperiBank/.LoginActivity");
 		// }
@@ -53,7 +49,7 @@ public class LoginFail_Android extends BaseTest {
 		System.out.println();
 	}
 
-	@Test
+	@Test(groups = { "seetest" })
 	public void test() {
 		driver.context("NATIVE_APP");
 		driver.unlockDevice();
@@ -69,7 +65,7 @@ public class LoginFail_Android extends BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
-		System.out.println(" >> " + getClass().getSimpleName() + ": @AfterMethod: driver.quit()");
+		System.out.println(" >> " + driver.getDeviceName() + " ," + getClass().getSimpleName() + ": @AfterMethod: driver.quit()");
 		// driver.close();
 		driver.quit();
 	}

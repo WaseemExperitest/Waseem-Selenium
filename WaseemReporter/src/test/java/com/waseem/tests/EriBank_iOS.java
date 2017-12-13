@@ -1,23 +1,19 @@
 package com.waseem.tests;
 
 import com.waseem.framework.BaseTest;
+import com.waseem.framework.NewIOSDriver;
 
 import org.openqa.selenium.By;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
-import io.appium.java_client.remote.IOSMobileCapabilityType;
-import io.appium.java_client.remote.MobileCapabilityType;
 
 public class EriBank_iOS extends BaseTest {
 	
-	protected IOSDriver<IOSElement> driver = null;
+	protected NewIOSDriver<IOSElement> driver = null;
 
 	@BeforeMethod
 	// @Parameters({ "build", "deviceQuery" })
@@ -37,7 +33,7 @@ public class EriBank_iOS extends BaseTest {
 //		dc.setCapability(MobileCapabilityType.NO_RESET, true);
 //		dc.setCapability("instrumentApp", true);
 
-		driver = new IOSDriver<IOSElement>(url, dc);
+		driver = new NewIOSDriver<IOSElement>(url, dc);
 
 //		if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
 //			driver.installApp("cloud:com.experitest.ExperiBank");
@@ -48,7 +44,7 @@ public class EriBank_iOS extends BaseTest {
 		System.out.println();
 	}
 
-	@Test
+	@Test(groups = { "seetest" })
 	public void test() {
 		  driver.context("NATIVE_APP");
 		  driver.executeScript("client:client.deviceAction(\"Unlock\")");
@@ -69,7 +65,7 @@ public class EriBank_iOS extends BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
-		System.out.println(" >> " + getClass().getSimpleName() + ": @AfterMethod: driver.quit()");
+		System.out.println(" >> " + driver.getDeviceName() + " ," + getClass().getSimpleName() + ": @AfterMethod: driver.quit()");
 		// driver.close();
 		driver.quit();
 	}
