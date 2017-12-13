@@ -23,18 +23,18 @@ public class LoginFail_Android extends BaseTest {
 	// @Parameters({ "build", "deviceQuery" })
 	// public void setUp(@Optional("0") String build, @Optional("@os='android'")
 	// String deviceQuery) throws Exception {
-
 	public void setUp(ITestContext context) throws Exception {
 
 		String build = getParameter(context, "build", "0");
 		String deviceQuery = getParameter(context, "deviceQuery", "@os='android'");
-//		String deviceQuery = getParameter(context, "LoginFail_Android_DeviceQuery", "@os='android'");
-
+		// String deviceQuery = getParameter(context, "EriBank_Android_DeviceQuery",
+		// "@os='android'");
 		// Init application / device capabilities
 		init(build, deviceQuery);
 
-		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "cloud:com.experitest.ExperiBank");
-		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+		// dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,
+		// "cloud:com.experitest.ExperiBank");
+		// dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 
 		// dc.setCapability(MobileCapabilityType.APP,
 		// "cloud:com.experitest.ExperiBank/.LoginActivity");
@@ -48,23 +48,16 @@ public class LoginFail_Android extends BaseTest {
 		// if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
 		// driver.installApp("cloud:com.experitest.ExperiBank/.LoginActivity");
 		// }
-
 		System.out.println();
-		System.out.println("---");
-		System.out.println(getClass().getName() + " > " + dc);
-		System.out.println("---");
+		System.out.println("---   " + getClass().getName() + " > " + dc);
 		System.out.println();
-}
+	}
 
 	@Test
 	public void test() {
-		// Enter the test code
 		driver.context("NATIVE_APP");
 		driver.unlockDevice();
 		driver.startActivity("com.experitest.ExperiBank", ".LoginActivity");
-
-		// driver.executeScript("client:client.deviceAction(\"Unlock\")");
-		// driver.executeScript("client:client.launch(\"com.experitest.ExperiBank/.LoginActivity\")");
 
 		driver.findElement(By.xpath("//*[@id='usernameTextField']")).sendKeys("Wrong-User");
 		driver.findElement(By.xpath("//*[@id='passwordTextField']")).sendKeys("company");

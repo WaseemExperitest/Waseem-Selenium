@@ -31,43 +31,38 @@ public class EriBank_iOS extends BaseTest {
 		// Init application / device capabilities
 		init(build, deviceQuery);
 
-		dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
-		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
-		dc.setCapability(MobileCapabilityType.NO_RESET, true);
-		dc.setCapability("instrumentApp", true);
+//		dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
+//		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
+//		dc.setCapability(MobileCapabilityType.NO_RESET, true);
+//		dc.setCapability("instrumentApp", true);
 
 		driver = new IOSDriver<IOSElement>(url, dc);
 
-		if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
-			driver.installApp("cloud:com.experitest.ExperiBank");
-		}
+//		if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
+//			driver.installApp("cloud:com.experitest.ExperiBank");
+//		}
 
 		System.out.println();
-		System.out.println("---");
-		System.out.println(getClass().getName() + " > " + dc);
-		System.out.println("---");
+		System.out.println("---   " + getClass().getName() + " > " + dc);
 		System.out.println();
-
 	}
 
 	@Test
 	public void test() {
-		// Enter the test code
-		driver.context("NATIVE_APP");
-		driver.executeScript("client:client.deviceAction(\"Unlock\")");
-		driver.executeScript("client:client.launch(\"com.experitest.ExperiBank\")");
-
-		driver.findElement(By.xpath("//*[@accessibilityLabel='usernameTextField']")).sendKeys("company");
-		driver.findElement(By.xpath("//*[@accessibilityLabel='passwordTextField']")).sendKeys("company");
-		driver.findElement(By.xpath("//*[@value='loginButton']")).click();
-		driver.findElement(By.xpath("//*[@value='makePaymentButton']")).click();
-		driver.findElement(By.xpath("//*[@value='Phone']")).sendKeys("032-545306454");
-		driver.findElement(By.xpath("//*[@value='Name']")).sendKeys("Waseem");
-		driver.findElement(By.xpath("//*[@value='Amount']")).sendKeys("11");
-		driver.findElement(By.xpath("//*[@text='countryButton']")).click();
-		driver.findElement(By.xpath("//*[@text='Iceland']")).click();
-		driver.findElement(By.xpath("//*[@text='sendPaymentButton']")).click();
-		driver.findElement(By.xpath("//*[@text='Yes']")).click();
+		  driver.context("NATIVE_APP");
+		  driver.executeScript("client:client.deviceAction(\"Unlock\")");
+		  driver.executeScript("client:client.launch(\"com.experitest.ExperiBank\")");
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='usernameTextField']")).sendKeys("company");
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='passwordTextField']")).sendKeys("company");
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='loginButton' or @value='loginButton']")).click();
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='Make Payment' or @value='makePaymentButton']")).click();
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='Phone' or @value='Phone']")).sendKeys("032-325306454");
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='Name' or @value='Name']")).sendKeys("Waseem");
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='Amount' or @value='Amount']")).sendKeys("11");
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='Select' or @text='countryButton']")).click();
+		  driver.findElement(By.xpath("//*[@text='Iceland']")).click();
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='Send Payment' or @text='sendPaymentButton']")).click();
+		  driver.findElement(By.xpath("//*[@text='Yes']")).click();
 	}
 
 	@AfterMethod

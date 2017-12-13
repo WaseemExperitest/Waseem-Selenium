@@ -26,12 +26,14 @@ public class EriBank_Android extends BaseTest {
 
 		String build = getParameter(context, "build", "0");
 		String deviceQuery = getParameter(context, "deviceQuery", "@os='android'");
-		//String deviceQuery = getParameter(context, "EriBank_Android_DeviceQuery", "@os='android'");
+		// String deviceQuery = getParameter(context, "EriBank_Android_DeviceQuery",
+		// "@os='android'");
 		// Init application / device capabilities
 		init(build, deviceQuery);
 
-		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "cloud:com.experitest.ExperiBank");
-		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+		// dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,
+		// "cloud:com.experitest.ExperiBank");
+		// dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 
 		// dc.setCapability(MobileCapabilityType.APP,
 		// "cloud:com.experitest.ExperiBank/.LoginActivity");
@@ -46,22 +48,16 @@ public class EriBank_Android extends BaseTest {
 		// driver.installApp("cloud:com.experitest.ExperiBank/.LoginActivity");
 		// }
 		System.out.println();
-		System.out.println("---");
-		System.out.println(getClass().getName() + " > " + dc);
-		System.out.println("---");
+		System.out.println("---   " + getClass().getName() + " > " + dc);
 		System.out.println();
 	}
 
 	@Test
 	public void test() {
-		// Enter the test code
 		driver.context("NATIVE_APP");
 		driver.unlockDevice();
 		driver.startActivity("com.experitest.ExperiBank", ".LoginActivity");
-
-		// driver.executeScript("client:client.deviceAction(\"Unlock\")");
-		// driver.executeScript("client:client.launch(\"com.experitest.ExperiBank/.LoginActivity\")");
-
+		
 		driver.findElement(By.xpath("//*[@id='usernameTextField']")).sendKeys("company");
 		driver.findElement(By.xpath("//*[@id='passwordTextField']")).sendKeys("company");
 		driver.findElement(By.xpath("//*[@id='loginButton']")).click();
