@@ -61,7 +61,7 @@ public class BaseTest {
 		dc.setCapability("build", build);
 		System.out.println("build=" + build);
 
-		dc.setCapability("testName", getClass().getSimpleName());
+		dc.setCapability("testName", getClass().getName());
 		String port = getProperty("port", cloudProperties);
 		if (port == null || port.length() <= 0) {
 			port = "443";
