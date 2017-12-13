@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.ios.IOSElement;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
 
 public class EriBank_iOS extends BaseTest {
 	
@@ -33,6 +34,7 @@ public class EriBank_iOS extends BaseTest {
 //		dc.setCapability(MobileCapabilityType.NO_RESET, true);
 //		dc.setCapability("instrumentApp", true);
 
+		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 		driver = new NewIOSDriver<IOSElement>(url, dc);
 
 //		if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
@@ -47,8 +49,8 @@ public class EriBank_iOS extends BaseTest {
 	@Test(groups = { "seetest" })
 	public void test() {
 		  driver.context("NATIVE_APP");
-		  driver.executeScript("client:client.deviceAction(\"Unlock\")");
-		  driver.executeScript("client:client.launch(\"com.experitest.ExperiBank\")");
+		  //driver.executeScript("client:client.deviceAction(\"Unlock\")");
+		  //driver.executeScript("client:client.launch(\"com.experitest.ExperiBank\")");
 		  driver.findElement(By.xpath("//*[@accessibilityLabel='usernameTextField']")).sendKeys("company");
 		  driver.findElement(By.xpath("//*[@accessibilityLabel='passwordTextField']")).sendKeys("company");
 		  driver.findElement(By.xpath("//*[@accessibilityLabel='loginButton' or @value='loginButton']")).click();
