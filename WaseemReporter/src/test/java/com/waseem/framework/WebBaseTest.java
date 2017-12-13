@@ -211,7 +211,7 @@ public class WebBaseTest {
 
 	@AfterClass
 	public void afterClass() {
-		System.out.println(browserOS + ": @AfterClass: driver.quit()");
+		System.out.println(getClass().getSimpleName() +","+ browserOS + ": @AfterClass: driver.quit()");
 		// driver.close();
 		driver.quit();
 	}

@@ -16,6 +16,7 @@ import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class EriBank_iOS extends BaseTest {
+	
 	protected IOSDriver<IOSElement> driver = null;
 
 	@BeforeMethod
@@ -63,10 +64,13 @@ public class EriBank_iOS extends BaseTest {
 		  driver.findElement(By.xpath("//*[@text='Iceland']")).click();
 		  driver.findElement(By.xpath("//*[@accessibilityLabel='Send Payment' or @text='sendPaymentButton']")).click();
 		  driver.findElement(By.xpath("//*[@text='Yes']")).click();
-	}
+		  driver.findElement(By.xpath("//*[@accessibilityLabel='logoutButton' or @value='logoutButton']")).click();
+		 }
 
 	@AfterMethod
 	public void tearDown() {
+		System.out.println(" >> " + getClass().getSimpleName() + ": @AfterMethod: driver.quit()");
+		// driver.close();
 		driver.quit();
 	}
 }

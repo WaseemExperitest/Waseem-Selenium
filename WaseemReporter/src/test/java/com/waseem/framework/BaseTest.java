@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
 import org.testng.util.Strings;
 
 public class BaseTest {
@@ -17,8 +18,7 @@ public class BaseTest {
 	protected DesiredCapabilities dc = new DesiredCapabilities();
 	protected Properties cloudProperties = new Properties();
 
-	public BaseTest()
-	{
+	public BaseTest() {
 		try {
 			initCloudProperties();
 		} catch (FileNotFoundException e) {
@@ -29,6 +29,7 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 	}
+
 	public void init(String build, String deviceQuery) throws Exception {
 		// initCloudProperties();
 		String query = adhocDevice(deviceQuery);
@@ -60,7 +61,7 @@ public class BaseTest {
 		dc.setCapability("build", build);
 		System.out.println("build=" + build);
 
-		dc.setCapability("testName", getClass().getName());
+		dc.setCapability("testName", getClass().getSimpleName());
 		String port = getProperty("port", cloudProperties);
 		if (port == null || port.length() <= 0) {
 			port = "443";
@@ -69,14 +70,16 @@ public class BaseTest {
 		System.out.println("url=" + url);
 	}
 
-	protected String getParameter(ITestContext context, String key, String defaultValue) throws FileNotFoundException, IOException {
+	protected String getParameter(ITestContext context, String key, String defaultValue)
+			throws FileNotFoundException, IOException {
 		String parameter = context.getCurrentXmlTest().getParameter(key);
 		System.out.println("getParameter(" + context.getName() + "," + key + ")=" + parameter);
 		if (Strings.isNullOrEmpty(parameter)) {
 			parameter = getProperty(key, cloudProperties);
 		}
 		if (Strings.isNullOrEmpty(parameter)) {
-			System.out.println("getParameter(" + context.getName() + "," + key + ") > using default value:" + defaultValue);
+			System.out.println(
+					"getParameter(" + context.getName() + "," + key + ") > using default value:" + defaultValue);
 			parameter = defaultValue;
 		}
 		return parameter;
@@ -134,5 +137,4 @@ public class BaseTest {
 		}
 		return deviceQuery;
 	}
-
 }

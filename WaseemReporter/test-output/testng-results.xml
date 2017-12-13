@@ -1,254 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" ignored="0" total="5" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="My Suite" duration-ms="317350" started-at="2017-11-27T10:24:43Z" finished-at="2017-11-27T10:30:01Z">
+  <suite name="Default suite" duration-ms="48490" started-at="2017-12-13T19:55:28Z" finished-at="2017-12-13T19:56:16Z">
     <groups>
     </groups>
-    <test name="EriBank-Android" duration-ms="39441" started-at="2017-11-27T10:24:43Z" finished-at="2017-11-27T10:25:23Z">
-      <class name="com.waseem.tests.EriBank_Android">
-        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.waseem.tests.EriBank_Android@4493d195]" name="setUp" is-config="true" duration-ms="39370" started-at="2017-11-27T12:24:44Z" finished-at="2017-11-27T12:25:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[@os='android']]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank/.LoginActivity, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\apk\1180\com.experitest.ExperiBank.LoginActivity.1.0.apk on android device: 
-LGH96021561778
- (reportUrl=https://cloudreports.experitest.com/#/test/910))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 38.75 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank/.LoginActivity, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\apk\1180\com.experitest.ExperiBank.LoginActivity.1.0.apk on android device: 
-LGH96021561778
- (reportUrl=https://cloudreports.experitest.com/#/test/910))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 38.75 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
-	at com.waseem.tests.EriBank_Android.setUp(EriBank_Android.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:com.waseem.tests.EriBank_Android@4493d195]" name="test" duration-ms="0" started-at="2017-11-27T12:25:23Z" finished-at="2017-11-27T12:25:23Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank/.LoginActivity, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\apk\1180\com.experitest.ExperiBank.LoginActivity.1.0.apk on android device: 
-LGH96021561778
- (reportUrl=https://cloudreports.experitest.com/#/test/910))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 38.75 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank/.LoginActivity, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\apk\1180\com.experitest.ExperiBank.LoginActivity.1.0.apk on android device: 
-LGH96021561778
- (reportUrl=https://cloudreports.experitest.com/#/test/910))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 38.75 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
-	at com.waseem.tests.EriBank_Android.setUp(EriBank_Android.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.waseem.tests.EriBank_Android -->
-    </test> <!-- EriBank-Android -->
-    <test name="EriBank-ios" duration-ms="53500" started-at="2017-11-27T10:24:43Z" finished-at="2017-11-27T10:25:37Z">
+    <test name="Default test" duration-ms="48490" started-at="2017-12-13T19:55:28Z" finished-at="2017-12-13T19:56:16Z">
       <class name="com.waseem.tests.EriBank_iOS">
-        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.waseem.tests.EriBank_iOS@34cd072c]" name="setUp" is-config="true" duration-ms="53453" started-at="2017-11-27T12:24:44Z" finished-at="2017-11-27T12:25:37Z">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.waseem.tests.EriBank_iOS@6d7b4f4c]" name="setUp" is-config="true" duration-ms="25583" started-at="2017-12-13T21:55:28Z" finished-at="2017-12-13T21:55:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[@os='ios']]>
+                <![CDATA[org.testng.TestRunner@1863d2fe]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\original-apks\2\com.experitest.ExperiBank_ver_1.0_2017-08-24-15-18-32.ipa 
-on iOS device: bb5f832e3ee56f952af3f8ae1983b4de9e4b0951
- (reportUrl=https://cloudreports.experitest.com/#/test/911))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 52.83 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.ios.IOSDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\original-apks\2\com.experitest.ExperiBank_ver_1.0_2017-08-24-15-18-32.ipa 
-on iOS device: bb5f832e3ee56f952af3f8ae1983b4de9e4b0951
- (reportUrl=https://cloudreports.experitest.com/#/test/911))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 52.83 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.ios.IOSDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at com.waseem.tests.EriBank_iOS.setUp(EriBank_iOS.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:com.waseem.tests.EriBank_iOS@34cd072c]" name="test" duration-ms="0" started-at="2017-11-27T12:25:37Z" finished-at="2017-11-27T12:25:37Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method status="FAIL" signature="test()[pri:0, instance:com.waseem.tests.EriBank_iOS@6d7b4f4c]" name="test" duration-ms="13469" started-at="2017-12-13T21:55:54Z" finished-at="2017-12-13T21:56:07Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\original-apks\2\com.experitest.ExperiBank_ver_1.0_2017-08-24-15-18-32.ipa 
-on iOS device: bb5f832e3ee56f952af3f8ae1983b4de9e4b0951
- (reportUrl=https://cloudreports.experitest.com/#/test/911))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 52.83 seconds
+              <![CDATA[javascript error (javascript error. TypeError: Can not invoke method [jdk.internal.dynalink.beans.SimpleDynamicMethod Map com.experitest.image.agent.appium.backend.commands.browser.AppiumScriptClient.launch(String,boolean,boolean)] with the passed arguments; they do not match any of its method signatures. in <eval> at line number 1)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 313 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.ios.IOSDriver]]>
+System info: host: 'WaseemS-LT', ip: '192.168.2.136', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, project=Default, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={stream=waseem, build=0, deviceQuery=@os='ios' and contains(@model, 'iphone'), reportDirectory=reports, project=Default, reportFormat=xml, platformName=iOS, testName=com.waseem.tests.EriBank_iOS}, device.serialNumber=c545a800b77466d31c0698db5814bed89e6269c7, stream=waseem, device.version=10.3.3, deviceQuery=@os='ios' and contains(@model, 'iphone'), automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=com.waseem.tests.EriBank_iOS, device.screenSize=750x1334, useKeystore=false, cloudViewLink=https://cloud-dhm7.experitest.com:443/#/AFi7ROsKgIZtqi50?1
+Picked up Grid Node (seetest_7777)
+Reserved Device : iPhone7, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=C:\Windows\Temp\headless\CLOUD-SID_2017-12-13_21-55-35-97c90261-7f9a-4c7b-8592-40ff1585b139\248cc2f4-f044-45af-a457-ef7b48829fbf, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, build=0, device.model=iPhone 7, device.name=iPhone7, projectName=, gridNodePort=7777, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-12-13_21-55-35-97c90261-7f9a-4c7b-8592-40ff1585b139]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created (An unknown server-side error occurred. status='false'. Failed to complete internal method: 'install args: [cloud:com.experitest.ExperiBank, true, true]', details: Failed to install cloud application: . Failed to install cloud application: . Failed to install: C:\ProgramData\cloud-server\original-apks\2\com.experitest.ExperiBank_ver_1.0_2017-08-24-15-18-32.ipa 
-on iOS device: bb5f832e3ee56f952af3f8ae1983b4de9e4b0951
- (reportUrl=https://cloudreports.experitest.com/#/test/911))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 52.83 seconds
+              <![CDATA[org.openqa.selenium.WebDriverException: javascript error (javascript error. TypeError: Can not invoke method [jdk.internal.dynalink.beans.SimpleDynamicMethod Map com.experitest.image.agent.appium.backend.commands.browser.AppiumScriptClient.launch(String,boolean,boolean)] with the passed arguments; they do not match any of its method signatures. in <eval> at line number 1)  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 313 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
+System info: host: 'WaseemS-LT', ip: '192.168.2.136', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
 Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, project=Default, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={stream=waseem, build=0, deviceQuery=@os='ios' and contains(@model, 'iphone'), reportDirectory=reports, project=Default, reportFormat=xml, platformName=iOS, testName=com.waseem.tests.EriBank_iOS}, device.serialNumber=c545a800b77466d31c0698db5814bed89e6269c7, stream=waseem, device.version=10.3.3, deviceQuery=@os='ios' and contains(@model, 'iphone'), automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=com.waseem.tests.EriBank_iOS, device.screenSize=750x1334, useKeystore=false, cloudViewLink=https://cloud-dhm7.experitest.com:443/#/AFi7ROsKgIZtqi50?1
+Picked up Grid Node (seetest_7777)
+Reserved Device : iPhone7, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=C:\Windows\Temp\headless\CLOUD-SID_2017-12-13_21-55-35-97c90261-7f9a-4c7b-8592-40ff1585b139\248cc2f4-f044-45af-a457-ef7b48829fbf, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, build=0, device.model=iPhone 7, device.name=iPhone7, projectName=, gridNodePort=7777, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2017-12-13_21-55-35-97c90261-7f9a-4c7b-8592-40ff1585b139
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -259,22 +51,14 @@ Driver info: io.appium.java_client.ios.IOSDriver
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:82)
-	at com.waseem.tests.EriBank_iOS.setUp(EriBank_iOS.java:32)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.waseem.tests.EriBank_iOS.test(EriBank_iOS.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -282,293 +66,29 @@ Driver info: io.appium.java_client.ios.IOSDriver
 	at org.testng.TestRunner.privateRun(TestRunner.java:744)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.waseem.tests.EriBank_iOS@6d7b4f4c]" name="tearDown" is-config="true" duration-ms="9249" started-at="2017-12-13T21:56:07Z" finished-at="2017-12-13T21:56:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.waseem.tests.EriBank_iOS -->
-    </test> <!-- EriBank-ios -->
-    <test name="Web-iOS" duration-ms="146160" started-at="2017-11-27T10:24:43Z" finished-at="2017-11-27T10:27:10Z">
-      <class name="com.waseem.tests.ExperitestCustomers">
-        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:com.waseem.tests.ExperitestCustomers@4d41cee]" name="beforeClass" is-config="true" duration-ms="108604" started-at="2017-11-27T12:24:44Z" finished-at="2017-11-27T12:26:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@417488ae]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testWebTest()[pri:0, instance:com.waseem.tests.ExperitestCustomers@4d41cee]" name="testWebTest" duration-ms="23124" started-at="2017-11-27T12:26:32Z" finished-at="2017-11-27T12:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWebTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.waseem.tests.ExperitestCustomers@4d41cee]" name="afterClass" is-config="true" duration-ms="14419" started-at="2017-11-27T12:26:55Z" finished-at="2017-11-27T12:27:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.waseem.tests.ExperitestCustomers -->
-    </test> <!-- Web-iOS -->
-    <test name="Web-Android" duration-ms="164242" started-at="2017-11-27T10:24:43Z" finished-at="2017-11-27T10:27:28Z">
-      <class name="com.waseem.tests.ExperitestCustomers">
-        <test-method status="PASS" signature="beforeClass(org.testng.ITestContext)[pri:0, instance:com.waseem.tests.ExperitestCustomers@26aa12dd]" name="beforeClass" is-config="true" duration-ms="105040" started-at="2017-11-27T12:24:44Z" finished-at="2017-11-27T12:26:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@59dcd0af]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testWebTest()[pri:0, instance:com.waseem.tests.ExperitestCustomers@26aa12dd]" name="testWebTest" duration-ms="46104" started-at="2017-11-27T12:26:29Z" finished-at="2017-11-27T12:27:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWebTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.waseem.tests.ExperitestCustomers@26aa12dd]" name="afterClass" is-config="true" duration-ms="13086" started-at="2017-11-27T12:27:15Z" finished-at="2017-11-27T12:27:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.waseem.tests.ExperitestCustomers -->
-    </test> <!-- Web-Android -->
-    <test name="LoginFail-Android" duration-ms="317350" started-at="2017-11-27T10:24:43Z" finished-at="2017-11-27T10:30:01Z">
-      <class name="com.waseem.tests.LoginFail_Android">
-        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.waseem.tests.LoginFail_Android@33c7e1bb]" name="setUp" is-config="true" duration-ms="317290" started-at="2017-11-27T12:24:44Z" finished-at="2017-11-27T12:30:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[@os='android']]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created (Call to lock device failed) 
-Command duration or timeout: 316.66 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created (Call to lock device failed) 
-Command duration or timeout: 316.66 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
-	at com.waseem.tests.LoginFail_Android.setUp(LoginFail_Android.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.SessionNotCreatedException: session not created (Call to lock device failed) 
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: driver.version: unknown
-	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-	at com.experitest.image.agent.appium.b.f.handle(MyApplication:110)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Router.doHandle(Router.java:422)
-	at org.restlet.routing.Router.handle(Router.java:641)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Router.doHandle(Router.java:422)
-	at org.restlet.routing.Router.handle(Router.java:641)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Router.doHandle(Router.java:422)
-	at org.restlet.routing.Router.handle(Router.java:641)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
-	at org.restlet.Component.handle(Component.java:408)
-	at org.restlet.Server.handle(Server.java:507)
-	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
-	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
-	at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelper.java:64)
-	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
-	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
-	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
-	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
-	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
-	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:com.waseem.tests.LoginFail_Android@33c7e1bb]" name="test" duration-ms="0" started-at="2017-11-27T12:30:01Z" finished-at="2017-11-27T12:30:01Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[session not created (Call to lock device failed) 
-Command duration or timeout: 316.66 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created (Call to lock device failed) 
-Command duration or timeout: 316.66 seconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: io.appium.java_client.android.AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
-	at com.waseem.tests.LoginFail_Android.setUp(LoginFail_Android.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.SessionNotCreatedException: session not created (Call to lock device failed) 
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'WaseemS-LT', ip: '10.100.102.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_141'
-Driver info: driver.version: unknown
-	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-	at com.experitest.image.agent.appium.b.f.handle(MyApplication:110)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Router.doHandle(Router.java:422)
-	at org.restlet.routing.Router.handle(Router.java:641)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Router.doHandle(Router.java:422)
-	at org.restlet.routing.Router.handle(Router.java:641)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Router.doHandle(Router.java:422)
-	at org.restlet.routing.Router.handle(Router.java:641)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.engine.application.StatusFilter.doHandle(StatusFilter.java:140)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.routing.Filter.doHandle(Filter.java:150)
-	at org.restlet.routing.Filter.handle(Filter.java:197)
-	at org.restlet.engine.CompositeHelper.handle(CompositeHelper.java:202)
-	at org.restlet.Component.handle(Component.java:408)
-	at org.restlet.Server.handle(Server.java:507)
-	at org.restlet.engine.connector.ServerHelper.handle(ServerHelper.java:63)
-	at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.java:143)
-	at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelper.java:64)
-	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
-	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
-	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
-	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
-	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
-	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.waseem.tests.LoginFail_Android -->
-      <class name="com.waseem.tests.ExperitestCustomers">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.waseem.tests.ExperitestCustomers@4d41cee]" name="beforeSuite" is-config="true" duration-ms="24" started-at="2017-11-27T12:24:43Z" finished-at="2017-11-27T12:24:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1ebe68ff]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-      </class> <!-- com.waseem.tests.ExperitestCustomers -->
-    </test> <!-- LoginFail-Android -->
-  </suite> <!-- My Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
