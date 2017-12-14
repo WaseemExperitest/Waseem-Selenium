@@ -69,7 +69,6 @@ public class EriBank_iOS extends BaseTest {
 	public void tearDown() {
 		System.out.println(" >> " + getClass().getSimpleName() + ": @AfterMethod: driver.quit()");
 		// driver.close();
-		driver.executeScript("client:client.generateReport(false)");
 		driver.quit();
 	}
 }
