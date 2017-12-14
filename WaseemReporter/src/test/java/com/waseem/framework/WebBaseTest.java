@@ -208,6 +208,12 @@ public class WebBaseTest {
 		}
 
 		driver.get(launshUrl);
+		try {
+			driver.wait(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@AfterClass
