@@ -40,9 +40,11 @@ public class EriBank_iOS extends BaseTest {
 		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 		driver = new NewIOSDriver<IOSElement>(url, dc);
 
-		// if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
-		// driver.installApp("cloud:com.experitest.ExperiBank");
-		// }
+		if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
+			System.out.println("!driver.isAppInstalled(\"com.experitest.ExperiBank\")");
+			System.out.println("driver.installApp(\"cloud:com.experitest.ExperiBank\")");
+			driver.installApp("cloud:com.experitest.ExperiBank");
+		}
 
 		System.out.println();
 		System.out.println("---   " + getClass().getName() + " > " + dc);

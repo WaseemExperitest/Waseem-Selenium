@@ -41,9 +41,11 @@ public class EriBank_Android extends BaseTest {
 		// dc.setCapability("instrumentApp", true);
 		//
 		driver = new NewAndroidDriver<AndroidElement>(url, dc);
-		// if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
-		// driver.installApp("cloud:com.experitest.ExperiBank/.LoginActivity");
-		// }
+		if (!driver.isAppInstalled("com.experitest.ExperiBank")) {
+			System.out.println("!driver.isAppInstalled(\"com.experitest.ExperiBank\")");
+			System.out.println("driver.installApp(\"cloud:com.experitest.ExperiBank/.LoginActivity\")");
+			driver.installApp("cloud:com.experitest.ExperiBank/.LoginActivity");
+		}
 		System.out.println();
 		System.out.println("---   " + getClass().getName() + " > " + dc);
 		System.out.println();
