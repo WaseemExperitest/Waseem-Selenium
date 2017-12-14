@@ -126,6 +126,7 @@ public class WebBaseTest {
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability("reportDirectory", reportDirectory);
 		dc.setCapability("reportFormat", reportFormat);
+		dc.setCapability("generateReport", true);
 		dc.setCapability("testName", this.getClass().getName());
 
 		String seeTestserver = null;

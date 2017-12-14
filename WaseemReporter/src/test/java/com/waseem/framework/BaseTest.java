@@ -66,6 +66,7 @@ public class BaseTest {
 		if (port == null || port.length() <= 0) {
 			port = "443";
 		}
+		dc.setCapability("generateReport", true);		
 		url = new URL(getProperty("url", cloudProperties) + ":" + port + "/wd/hub");
 		System.out.println("url=" + url);
 	}
