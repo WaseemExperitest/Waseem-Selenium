@@ -21,9 +21,9 @@ public class NewAndroidDriver<T extends WebElement> extends AndroidDriver<T> {
 
 		super(remoteAddress, desiredCapabilities);
 
-		this.deviceID = (String) desiredCapabilities.getCapability("udid");
+		this.deviceID = (String) desiredCapabilities.getCapability("device.serialNumber");
 		try {
-			this.deviceName = ((String) desiredCapabilities.getCapability("deviceName")).replace(" ", "_")
+			this.deviceName = ((String) desiredCapabilities.getCapability("device.name")).replace(" ", "_")
 					.replace("'", "-").trim();
 		} catch (Exception e) {
 			this.deviceName = getDeviceID();

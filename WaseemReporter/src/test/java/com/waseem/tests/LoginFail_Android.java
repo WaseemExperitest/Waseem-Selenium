@@ -65,7 +65,8 @@ public class LoginFail_Android extends BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
-		System.out.println(" >> " + getClass().getSimpleName() + ": @AfterMethod: driver.quit()");
+		System.out.println(
+				" >> " + getClass().getSimpleName() + ":@AfterMethod: driver.quit() " + driver.getCapabilities());
 		// driver.close();
 		driver.quit();
 	}

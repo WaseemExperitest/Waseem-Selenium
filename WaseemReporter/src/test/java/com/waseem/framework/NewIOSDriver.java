@@ -20,8 +20,8 @@ public class NewIOSDriver<T extends WebElement> extends IOSDriver<WebElement> {
 	public NewIOSDriver(URL remoteAddress, Capabilities desiredCapabilities) {
 		super(remoteAddress, desiredCapabilities);
 		try {
-			this.deviceID = (String) desiredCapabilities.getCapability("udid");
-			this.deviceName = ((String) desiredCapabilities.getCapability("deviceName")).replace(" ", "_")
+			this.deviceID = (String) desiredCapabilities.getCapability("device.udid");
+			this.deviceName = ((String) desiredCapabilities.getCapability("device.name")).replace(" ", "_")
 					.replace("'", "-").trim();
 
 		} catch (Exception e) {
