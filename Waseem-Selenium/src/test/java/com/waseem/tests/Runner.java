@@ -12,10 +12,10 @@ import com.waseem.framework.PlatformType;
 
 public class Runner {
 
-	protected int numOfChrome = 1;
-	protected int numOfFirefox = 1;
-	protected int numOfIE = 1;
-	protected int numOfIOS = 1;
+	protected int numOfChrome = 5;
+	protected int numOfFirefox = 4;
+	protected int numOfIE = 3;
+	protected int numOfIOS = 2;
 	protected int numOfAndroid = 1;
 
 	protected String versionOfChrome = "62";
