@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Waseem-Selenium-Suite" parallel="tests">
+	<parameter name="build" value="0" />
+	
+	<parameter name="numOfChrome" value="2" />
+	<parameter name="numOfFirefox" value="2" />
+	<parameter name="numOfIE" value="2" />
+	<parameter name="numOfIOS" value="2" />
+	<parameter name="numOfAndroid" value="2" />
+	
+	<parameter name="versionOfChrome" value="63" />
+	<parameter name="versionOfFirefox" value="57.0.2" />
+	<parameter name="versionOfIE" value="11" />
+	
+	<parameter name="platform" value="WIN8"></parameter>
+
+	<test thread-count="5" name="Waseem-Selenium-Test" parallel="classes">
+		<classes>
+			<class name="com.waseem.tests.Runner" />
+		</classes>
+	</test> <!-- Waseem-Selenium-Test -->
+</suite> <!-- Waseem-Selenium-Suite -->
