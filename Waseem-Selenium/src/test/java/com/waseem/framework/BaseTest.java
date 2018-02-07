@@ -135,21 +135,24 @@ public abstract class BaseTest implements Runnable {
 		if (Strings.isNullOrEmpty(port)) {
 			port = "443";
 			System.out.println("default port " + port);
-		}
+		}		
 		url = getProperty("url", cloudProperties);
 		if (!url.contains("/wd/hub")) {
 			if (!url.contains(":")) {
+				// case url=sales.experitest.com
 				url += ":" + port;
 			} else {
 				if (url.contains("http")) {
 					int i = url.lastIndexOf(':');
-					if (i < 6) {
+					if (i < 6) { // 012345
+						// case url=https://sales.experitest.com
 						url += ":" + port;
 					}
 				}
 			}
 			url += "/wd/hub";
 		}
+		// https://sales.experitest.com:443/wd/hub
 		System.out.println();
 		System.out.println("--- " + getClass().getName() + " > DesiredCapabilities:");
 		System.out.println(dc);
