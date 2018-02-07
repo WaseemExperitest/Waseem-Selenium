@@ -3,11 +3,11 @@
 <suite name="Waseem-Selenium-Suite" parallel="tests">
 	<parameter name="build" value="0" />
 	
-	<parameter name="numOfChrome" value="2" />
-	<parameter name="numOfFirefox" value="2" />
-	<parameter name="numOfIE" value="2" />
-	<parameter name="numOfIOS" value="2" />
-	<parameter name="numOfAndroid" value="2" />
+	<parameter name="numOfChrome" value="1" />
+	<parameter name="numOfFirefox" value="1" />
+	<parameter name="numOfIE" value="1" />
+	<parameter name="numOfIOS" value="1" />
+	<parameter name="numOfAndroid" value="1" />
 	
 	<parameter name="versionOfChrome" value="63" />
 	<parameter name="versionOfFirefox" value="57.0.2" />
